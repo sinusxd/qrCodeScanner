@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let url = "https://www.google.com"
 
         qrLink.innerHTML = "<a id=\"qrLink\">Оплатить</a>"
-        qrLink.href = `javascript:Telegram.WebApp.openLink('${url}')`
+        qrLink.href = `javascript:Telegram.WebApp.openLink('${url}', true)`
 
         tWabApp.MainButton.hide()
 
