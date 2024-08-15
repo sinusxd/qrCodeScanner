@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const infoStart = document.getElementById("info-text-start");
     const infoLoad = document.getElementById("info-text-load");
     const qrLink = document.getElementById("qrLink");
-    infoLoad.style.display = "none"
+    infoLoad.style.display = "block"
 
     init();
 
@@ -42,13 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
         idNumber = getRandomInt(MAX_VALUE)
         idText = zeroPad(idNumber, MAX_VALUE)
         const suffix = "?uuid=20306&amount=7.00&trxid=" + idText + "&type=05"
-        window.location.href = "https://ift.multiqr.ru/?uuid=20306&amount=7.00&trxid=12345678912&type=05";
-
-        tWabApp.MainButton.hide()
-
-        tWabApp.closeScanQrPopup()
-
         infoLoad.style.display = "block"
         infoStart.style.display = "none"
+        window.location.href = "https://ift.multiqr.ru/?uuid=20306&amount=7.00&trxid=12345678912&type=05";
+        tWabApp.MainButton.hide()
+        tWabApp.closeScanQrPopup()
+
+
     }
 });
