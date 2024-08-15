@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         idNumber = getRandomInt(MAX_VALUE)
         idText = zeroPad(idNumber, MAX_VALUE)
         const suffix = "?uuid=20306&amount=7.00&trxid=" + idText + "&type=05"
-        let url = "https://www.google.com"
+        let url = "https://ift.multiqr.ru/?uuid=20306&amount=7.00&trxid=12345678912&type=05"
 
         window.location.href = url;
 
