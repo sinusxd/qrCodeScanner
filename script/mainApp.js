@@ -44,15 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
         const suffix = "?uuid=20306&amount=7.00&trxid=" + idText + "&type=05"
         let url = "https://www.google.com"
 
-        // qrLink.innerHTML = "<a id=\"qrLink\">Оплатить</a>"
-        qrLink.innerHTML = "aboba"
-        // qrLink.href = `javascript:Telegram.WebApp.openLink('${url}', true)`
+        window.location.href = url;
 
         tWabApp.MainButton.hide()
 
         tWabApp.closeScanQrPopup()
-
-        // openLink(url)
 
         infoLoad.style.display = "block"
         loader.style.display = "none"
