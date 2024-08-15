@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const infoStart = document.getElementById("info-text-start");
     const infoLoad = document.getElementById("info-text-load");
     const qrLink = document.getElementById("qrLink");
-    infoLoad.style.display = "block"
+    infoLoad.style.display = "none";
 
     init();
 
