@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const infoStart = document.getElementById("info-text-start");
     const infoLoad = document.getElementById("info-text-load");
-    const loader = document.getElementById("loader");
     const qrLink = document.getElementById("qrLink");
+    infoLoad.style.display = "none"
 
     init();
 
@@ -49,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
         tWabApp.closeScanQrPopup()
 
         infoLoad.style.display = "block"
-        loader.style.display = "none"
         infoStart.style.display = "none"
     }
 });
